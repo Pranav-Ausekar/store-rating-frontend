@@ -18,7 +18,7 @@ const StoreOwner = () => {
     // Fetch store details and ratings
     const fetchRatings = async () => {
         try {
-            const response = await axios.get('https://store-rating-backend-mkns.onrender.com/api/store-owner/ratings', {
+            const response = await axios.get('https://store-rating-backend-1.onrender.com/api/store-owner/ratings', {
                 headers: { Authorization: `Bearer ${token}` },
             });
 

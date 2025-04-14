@@ -10,7 +10,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://store-rating-backend-mkns.onrender.com/api/auth/login', {
+            const response = await axios.post('https://store-rating-backend-1.onrender.com/api/auth/login', {
                 email,
                 password
             });

@@ -25,7 +25,7 @@ const Stores = () => {
         setLoading(true);
         setError('');
         try {
-            const response = await axios.get('https://store-rating-backend-mkns.onrender.com/api/admin/stores', {
+            const response = await axios.get('https://store-rating-backend-1.onrender.com/api/admin/stores', {
                 headers: { Authorization: `Bearer ${token}` },
             });
 
@@ -64,7 +64,7 @@ const Stores = () => {
 
         try {
             const response = await axios.post(
-                `https://store-rating-backend-mkns.onrender.com/api/ratings`,
+                `https://store-rating-backend-1.onrender.com/api/ratings`,
                 { storeId, rating },
                 { headers: { Authorization: `Bearer ${token}` } }
             );

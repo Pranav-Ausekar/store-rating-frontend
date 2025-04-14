@@ -20,7 +20,7 @@ const Signup = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post('https://store-rating-backend-mkns.onrender.com/api/auth/signup', formData);
+            const res = await axios.post('https://store-rating-backend-1.onrender.com/api/auth/signup', formData);
 
             alert('Signup successful!');
 

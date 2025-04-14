@@ -17,8 +17,8 @@ const Dashboard = () => {
         try {
             const endpoint =
                 activeTab === 'users'
-                    ? 'https://store-rating-backend-mkns.onrender.com/api/admin/users'
-                    : 'https://store-rating-backend-mkns.onrender.com/api/admin/stores';
+                    ? 'https://store-rating-backend-1.onrender.com/api/admin/users'
+                    : 'https://store-rating-backend-1.onrender.com/api/admin/stores';
 
             const response = await axios.get(endpoint, {
                 headers: { Authorization: `Bearer ${token}` },
@@ -47,8 +47,8 @@ const Dashboard = () => {
         try {
             const endpoint =
                 activeTab === 'users'
-                    ? 'https://store-rating-backend-mkns.onrender.com/api/admin/users'
-                    : 'https://store-rating-backend-mkns.onrender.com/api/admin/stores';
+                    ? 'https://store-rating-backend-1.onrender.com/api/admin/users'
+                    : 'https://store-rating-backend-1.onrender.com/api/admin/stores';
 
             await axios.post(endpoint, formData, {
                 headers: { Authorization: `Bearer ${token}` },
